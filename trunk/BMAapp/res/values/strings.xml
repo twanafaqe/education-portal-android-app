@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Oturum Aç</string>
+    <string name="act_home_label">Ana Sayfa</string>
+    <string name="act_paketler_label">Paketler</string>
+    <string name="act_paketiceriklistesi_label">Paket İçerik Listesi</string>
+    <string name="act_paketicerik_label">Paket İçerik</string>
+    <string name="act_arama_label">Ana Sayfa</string>
+    <string name="act_profil_label">Ana Sayfa</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="uyeOl"><a href="http://yazilim.ci/uyeol">Üye Ol</a></string>
+    <string name="yeniSifre"><a href="http://yazilim.ci/yenisifre">Şifremi Unuttum</a></string>
+    <string name="sifreDegistir">Şifre: <a href="http://yazilim.ci/sifredegistir">Değiştir</a></string>
+    <string name="kredial">Kredi: <a href="http://yazilim.ci/kredeal">Satın Al</a></string>
+    <string name="uname">kullanıcı adi</string>
+    <string name="upass">şifre</string>
+    <string name="login_button">Oturum Aç</string>
+
+</resources>
