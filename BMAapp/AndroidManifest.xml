@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bma.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bma.activity.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bma.activity.HomeActivity"
+            android:label="@string/act_home_label" >
+        </activity>
+        <activity
+            android:name="com.bma.activity.PaketListesiActivity"
+            android:label="@string/act_paketler_label" >
+        </activity>
+        <activity
+            android:name="com.bma.activity.PaketIcerikListesiActivity"
+            android:label="@string/act_paketiceriklistesi_label" >
+        </activity>
+        <activity
+            android:name="com.bma.activity.PaketIcerikActivity"
+            android:label="@string/act_paketicerik_label" >
+        </activity>
+        <activity
+            android:name="com.bma.activity.AramaSonucActivity"
+            android:label="@string/act_arama_label" >
+        </activity>
+        <activity
+            android:name="com.bma.activity.ProfilBilgileriActivity"
+            android:label="@string/act_profil_label" >
+        </activity>
+    </application>
+
+</manifest>
