@@ -11,6 +11,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.bma.utils.Secure;
 import com.bma.webservis.HttpRead;
 
 import android.app.Activity;
@@ -42,11 +43,10 @@ public class LoginActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 
-		
+		Secure sc = new Secure(getPackageManager(), getPackageName(), this);
 		user = (EditText) findViewById(R.id.editTextKullaniciAdi);
 		pass = (EditText) findViewById(R.id.editTextSifre);
 
-		
 		mSubmit = (Button) findViewById(R.id.loginButton);
 
 		mSubmit.setOnClickListener(this);
@@ -66,7 +66,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 	}
 
 	private ProgressDialog pDialog;
-	
+
 	class AttemptLogin extends AsyncTask<String, String, String> {
 
 		int success = 0;
