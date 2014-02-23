@@ -11,7 +11,7 @@ import android.util.Log;
 
 public class VideoPlayerActivity extends Activity {
 
-	public static final String TAG = "mxvp.intent.test";
+	public static final String TAG = "com.bma.activity.VideoPlayerActivity";
 
 	public static final String MXVP = "com.mxtech.videoplayer.ad";
 	public static final String MXVP_PLAYBACK_CLASS = "com.mxtech.videoplayer.ad.ActivityScreen";
