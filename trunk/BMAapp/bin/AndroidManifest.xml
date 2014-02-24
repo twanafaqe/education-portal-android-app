@@ -49,7 +49,7 @@
             android:label="@string/act_profil_label" >
         </activity>
          <activity
-            android:name="com.bma.utils.VideoPlayer"
+            android:name="com.bma.activity.VideoPlayerActivity"
             android:label="@string/act_profil_label" >
         </activity>
     </application>
