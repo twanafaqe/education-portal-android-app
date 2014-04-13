@@ -1,6 +1,6 @@
 <?php
 /*
- * Servis için "config.inc.php" dosyasi çok önemli! Bu dosya servisi veritabanýna baðlar.
+* Servis için "config.inc.php" dosyasi çok önemli! Bu dosya servisi veritabanýna baðlar.
 * Bunun için veritabaný iþlemlerini kullanacaðýmýz dosyalara eklememiz gerekiyor.
 * "$db" nesnesini veritabaný ile iletiþim kurmamýz için bize saðlar.
 * Tüm veritabaný sorgulamalarýný PDO nesnesi olan "$db" ile halledebilirsiniz.
@@ -8,7 +8,7 @@
 require("config.inc.php");
 
 //deðiþken tanýmlamalarý baþlar
-$page_item = 10;					// bir sayfada gösterilecek içerik miktarýný belirtiyoruz.
+$page_item = 10;			// bir sayfada gösterilecek içerik miktarýný belirtiyoruz.
 $query = "";				// sql sorgu cümlesi
 $query_params = array();	// sql sorgu cümlesi içine yerleþtirilmiþ :parametre lerin iliþki dizisi
 $response = array();		// toplanan verilerin jsona çevrilmeden önceki dizi hali.
