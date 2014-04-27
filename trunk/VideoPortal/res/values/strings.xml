@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Video Portal</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Menü</string>
+    <string name="drawer_close">Menu Kapandi</string>
+    <string name="editText_Login_UserName">UserName</string>
+    <string name="editText_Login_UserPassword">UserPassword</string>
+    <string name="button_Login_Enter">login enter</string>
+    <string name="editText_Profile_UserName">UserName</string>
+    <string name="editText_Profile_Name">Name</string>
+    <string name="editText_Profile_SurName">Surname</string>
+    <string name="editText_Profile_Email">Email</string>
+    <string name="buttton_Profile_Update">Update</string>
+    <string name="editText_Register_UserName">editTextRegisterUserName</string>
+    <string name="editText_Register_Name">editTextRegisterName</string>
+    <string name="editText_Register_Surname">editTextRegisterSurname</string>
+    <string name="editText_Register_Password">editTextRegisterPassword</string>
+    <string name="editText_Register_PasswordRepeat">editTextRegisterPasswordRepeat</string>
+    <string name="editText_Register_Email">editTextRegisterEmail</string>
+    <string name="button_Register_Save">Register Save</string>
+    <string name="textView_Slogan">SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN SLOGAN</string>
+    <string name="text_fragment_home_view">(Silinebilir)Home View , HOSGELDİNİZ</string>
+    <string name="text_fragment_lecture_view">()Silinebilir) Lecture View</string>
+    <string name="text_fragment_profile_view">Silebilirsin Profile View</string>
+    <string name="text_fragment_d_view">D View</string>
+    <string name="text_fragment_e_view">E View</string>
+    <string name="text_fragment_f_view">F View</string>
+    <string name="description_ic_d">ic_communities</string>
+    <string name="description_ic_drawerlecturefragment">LECTURE</string>
+    <string name="description_ic_drawerhomefragment">HOME</string>
+    <string name="description_ic_e">ic_pages</string>
+    <string name="description_ic_drawerprofilefragment">PROFILE</string>
+    <string name="description_ic_f">ic_whats_hot</string>
+
+    <string-array name="lecture_array_items">
+        <item>ANDROID</item>
+        <item>OBJECTIVE-C</item>
+        <item>WINDOWS PHONE</item>
+        <item>JAVA</item>
+        <item>C#</item>
+        <item>C++</item>
+        <item>ASP.NET</item>
+        <item>PHP</item>
+        <item>HTML 5</item>
+        <item>CSS 3</item>
+        <item>JAVASCRIPT</item>
+    </string-array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>
