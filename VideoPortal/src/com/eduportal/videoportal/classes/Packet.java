@@ -7,6 +7,8 @@ public class Packet {
 	private String category;
 	private String username;
 	private String image;
+	private String adet;
+	private String izleme;
 
 	public Packet(String p) {
 		this.id = "";
@@ -14,6 +16,8 @@ public class Packet {
 		this.category = "";
 		this.username = "";
 		this.image = "";
+		this.adet = "";
+		this.izleme = "";
 	}
 
 	public Packet() {
@@ -57,6 +61,22 @@ public class Packet {
 
 	public void setImage(String image) {
 		this.image = image;
+	}
+
+	public String getAdet() {
+		return adet;
+	}
+
+	public void setAdet(String adet) {
+		this.adet = adet;
+	}
+
+	public String getIzleme() {
+		return izleme;
+	}
+
+	public void setIzleme(String izleme) {
+		this.izleme = izleme;
 	}
 
 }

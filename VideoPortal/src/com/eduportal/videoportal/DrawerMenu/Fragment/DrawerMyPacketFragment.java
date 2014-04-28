@@ -29,6 +29,7 @@ import android.widget.Toast;
 import com.eduportal.videoportal.classes.Packet;
 import com.eduportal.videoportal.servis.HttpRead;
 import com.eduportal.videoportal.utils.CustomListAdapter;
+import com.eduportal.videoportal.utils.SessionManager;
 import com.eduportal.videoportal.R;
 import com.eduportal.videoportal.scrollpages.ScrollTabActivity;
 
@@ -70,7 +71,8 @@ public class DrawerMyPacketFragment extends Fragment {
 		super.onActivityCreated(savedInstanceState);
 
 		lv = (ListView) getActivity().findViewById(R.id.listviewLecture);
-		
+		SessionManager session = new SessionManager(getActivity());
+	    session.checkLogin();
 		new LoadPackets().execute("1");
 		
 		lv.setOnItemClickListener(new OnItemClickListener() {
