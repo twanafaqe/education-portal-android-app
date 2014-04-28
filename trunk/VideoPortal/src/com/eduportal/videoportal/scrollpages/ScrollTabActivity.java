@@ -34,6 +34,7 @@ import com.eduportal.videoportal.R;
 import com.eduportal.videoportal.classes.Lecture;
 import com.eduportal.videoportal.classes.Packet;
 import com.eduportal.videoportal.servis.HttpRead;
+import com.eduportal.videoportal.utils.SessionManager;
 
 public class ScrollTabActivity extends FragmentActivity {
 
@@ -66,7 +67,8 @@ public class ScrollTabActivity extends FragmentActivity {
 		bundle = intent.getExtras(); 
 		String pid = bundle.getString("pid");
         
-		
+		SessionManager session = new SessionManager(getApplicationContext());
+	    session.checkLogin();
         new LoadPackets().execute(pid);
     }
     
@@ -129,22 +131,13 @@ public class ScrollTabActivity extends FragmentActivity {
 		// getting product details by making HTTP request
 		JSONObject json = httpread.makeHttpRequest(READ_LECTURE_URL, "POST",
 				params);
-		// when parsing JSON stuff, we should probably
-		// try to catch any exceptions:
+		
 		try {
-
-			// I know I said we would check if "Posts were Avail."
-			// (success==1)
-			// before we tried to read the individual posts, but I lied...
-			// mComments will tell us how many "posts" or comments are
-			// available
 			success = json.getInt(TAG_SUCCESS);
 			if (success == 1) {
 
 				mLectureJsonArray = json.getJSONArray(TAG_LECTURE);
 
-				// looping through all posts according to the json object
-				// returned
 				for (int i = 0; i < mLectureJsonArray.length(); i++) {
 					JSONObject c = mLectureJsonArray.getJSONObject(i);
 
@@ -161,18 +154,16 @@ public class ScrollTabActivity extends FragmentActivity {
 					mLecture.setResim(resim);
 					mLecture.setVideo(video);
 					mLecture.setSure(sure);
-					// adding HashList to ArrayList
+					
 					mLecturesArrayList.add(mLecture);
 
-					// annndddd, our JSON data is up to date same with our
-					// array
-					// list
+					
 				}
 			} else {
 
 				Lecture mLecture = new Lecture("");
 
-				// adding HashList to ArrayList
+				
 				mLecturesArrayList.add(mLecture);
 				mLecturesArrayList.add(mLecture);
 
@@ -220,7 +211,7 @@ public class ScrollTabActivity extends FragmentActivity {
 
         @Override
         public int getCount() {
-            return mLecturesArrayList.size();//mPacketArrayListAdapter.size();
+            return mLecturesArrayList.size();
         }
 
         @Override
